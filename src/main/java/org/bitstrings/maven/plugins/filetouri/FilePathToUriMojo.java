@@ -58,8 +58,6 @@ public class FilePathToUriMojo
                         : uri.toString();
 
                 mavenProperties.setProperty( filePathToUri.getPropertyName(), uriString );
-
-                System.out.println( "  uriName = " + mavenProperties.getProperty( filePathToUri.getPropertyName() ) );
             }
             catch ( Exception e )
             {
